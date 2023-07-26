@@ -5,13 +5,6 @@
   outline: 0;
 }
 
-.container00 {
-  background-image: url(/images/home/GradientBG.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .titlePadding {
   display: flex;
   margin-top: 250px;

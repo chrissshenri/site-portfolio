@@ -1,0 +1,46 @@
+$color-presentation: #FFFFFF;
+$h1-color: #ffffff;
+$blue-color:  #4019FF;
+$shadow: #474747;
+$black: #000;
+
+#presentation {
+    color: $color-presentation;
+    text-shadow: 3px 2px 2px $shadow;
+}
+
+#name {
+    color: $black;
+    -webkit-background-clip: text;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.h1 {
+    color: $h1-color;
+    text-shadow: 3px 2px 2px $shadow;
+}
+
+#navItem {
+    text-transform: uppercase;
+    color: $h1-color;
+    text-shadow: 2px 2px 2px $shadow;
+}
+
+#navItem:hover {
+    border-bottom: 1px solid $h1-color;
+}
+
+.span-about-me span {
+    color: $h1-color;
+}
+
+.name-project {
+    margin: 20px 0;
+}
+
+.description-project {
+    font-weight: 800;
+    max-width: 70%;
+    text-align: center;
+    margin-bottom: 100px;
+}

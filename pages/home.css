@@ -1,6 +1,6 @@
-.container00 {
+body {
   background-image: url(/images/home/GradientBG.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   background-size: cover;
 }
@@ -10,13 +10,94 @@
   margin-top: 250px;
 }
 
+#contacts {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+.span-about-me {
+  cursor: pointer;
+  padding: 10px;
+  max-width: 70%;
+  margin-top: 80px;
+  text-align: left;
+  box-shadow: 5px 5px 26px 0px #000;
+  border-radius: 12px;
+}
+
+.span-about-me:hover {
+  animation: myAnim 2s ease 0s 1 normal none;
+}
+
+#hero {
+  margin-top: 200px;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 #arrow {
-  margin-top: 150px;
+  margin-top: 50px;
+}
+
+#title-section {
+  margin-bottom: 50px;
+}
+
+#title-project {
+  margin-bottom: 50px;
+}
+
+#projects-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 190px;
 }
 
 .projects {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/*# sourceMappingURL=home.css.map */
+.project-img-1, .project-img-2 {
+  display: flex;
+  align-items: end;
+  gap: 30px;
+}
+
+.project-1, .project-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-img-1:hover, .project-img-2:hover {
+  animation: scaleUp 2s ease 0s 1 normal forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

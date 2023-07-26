@@ -1,0 +1,40 @@
+#presentation {
+  color: #FFFFFF;
+  text-shadow: 3px 2px 2px #474747;
+}
+
+#name {
+  color: #000;
+  -webkit-background-clip: text;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.h1 {
+  color: #ffffff;
+  text-shadow: 3px 2px 2px #474747;
+}
+
+#navItem {
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #474747;
+}
+
+#navItem:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+.span-about-me span {
+  color: #ffffff;
+}
+
+.name-project {
+  margin: 20px 0;
+}
+
+.description-project {
+  font-weight: 800;
+  max-width: 70%;
+  text-align: center;
+  margin-bottom: 100px;
+}
