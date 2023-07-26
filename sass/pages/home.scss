@@ -20,6 +20,25 @@ a {
     cursor: pointer;
 }
 
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
 .span-about-me {
     cursor: pointer;
     padding: 10px;
@@ -106,4 +125,91 @@ a {
 		transform: scale(1);
 	}
 
+}
+
+// responsive
+
+@media (max-width: 1199px) {
+    .span-about-me {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar-nav {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .navbar-nav.active {
+        left: 0;
+        backdrop-filter: blur(2px);
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo {
+        margin: 50px 0;
+    }
+
+    .span-about-me {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 372px) {
+    .photo img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 416px) {
+    #hero {
+        margin: 0 auto;
+    }
+
+    #projects {
+        justify-content: center;
+    }
+
+    .project-img-1 a, .project-img-2 a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
